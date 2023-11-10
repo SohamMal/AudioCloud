@@ -1,5 +1,5 @@
 .Queue{
-    /* display: none; */
+    display: none; 
     box-shadow:0 0 20px skyblue;
     z-index: 2;
     position: fixed;
