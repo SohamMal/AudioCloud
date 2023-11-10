@@ -1,0 +1,48 @@
+.Queue{
+    /* display: none; */
+    box-shadow:0 0 20px skyblue;
+    z-index: 2;
+    position: fixed;
+    background-color: #73BBC9;
+    border-radius: 10px;
+    width: 25%;
+    margin-top: 34vh;
+    left: 73%;
+    height: 52vh;
+    overflow-y: scroll;
+}
+/* scroll bar hide */
+.Queue::-webkit-scrollbar {
+    display: none; /*chrome, safari and opera*/
+
+}
+.Queue{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+@media screen and (max-width: 768px) {
+    .Queue{
+        width: 50%;
+        left: 45%
+    }
+}
+.text{
+    word-wrap: none;
+    overflow: scoll;
+    font-size: 1em;
+    padding-top: 1.5vh;
+    font-weight: 600;
+}
+.queue-header{
+    font-size: 1em; 
+    margin-left:5%; 
+    margin-top: 3%; 
+    color:#06283D; 
+    font-weight:700;
+}
+.queue-img{
+    border-radius: 50%;
+    width: 55%;
+    height: 7vh;
+    margin-right: 5%;
+}

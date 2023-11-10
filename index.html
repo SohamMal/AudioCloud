@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioWave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queue.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f69a6f8c9a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="row">
+        <div class="sidebar col-lg-2 p-0">
+            <div class="logo">
+                <i class="fa-brands fa-soundcloud fa-2xl"></i>
+                <span class="title ms-1">AuidoWave</span>
+            </div>
+            <div class="pages">
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a class="sidebar-links" href="#">
+                            <span><i class="fa-solid fa-house fa-lg"></i></span>
+                            <span class="ms-2">Home</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a class="sidebar-links" href="#">
+                            <span><i class="fa-solid fa-compass fa-lg"></i></span>
+                            <span class="ms-2">Explore</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a class="sidebar-links" href="#">
+                            <span><i class="fa-solid fa-music fa-lg"></i></span>
+                            <span class="ms-2">Moodes</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                        <a class="sidebar-links" href="#">
+                            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                            <span class="ms-2">Search</span>
+                        </a>
+                    </li>
+                </ul>
+                <br>
+                <div class="sidebar-down text-center">
+                    <button type="button" class="btn btn-outline-light sign-in-btn">Sign in</button>
+                    <p>Sign in to explore the world of music!!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 main-display p-0">
+            <div class="Queue">
+                <p class="queue-header">Now Playing</p>
+                <div class="row p-0">
+                    <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
+                        <img src="soul_king.png" alt="soaul_king" class="queue-img Now-playing-img">
+                    </div>
+                    <div class="col m-0 Now-playing-text text">Bink's Sake</div>
+                </div>
+                <p class="queue-header">Next in queue</p>
+                <div class="row p-0" style="margin-bottom: 3vh;">
+                    <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
+                        <img src="Withthebeatlescover.jpg" alt="cover" class="queue-img q1img">
+                    </div>
+                    <div class="col m-0 q1text text">Baby you're a rich man</div>
+                </div>
+                <div class="row p-0" style="margin-bottom: 3vh;">
+                    <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
+                        <img src="Moneky_d_luffy.png" alt="cover" class="queue-img q2img">
+                    </div>
+                    <div class="col m-0 q2text text">Monkey the luffy</div>
+                </div>
+                <div class="row p-0" style="margin-bottom: 3vh;">
+                    <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
+                        <img src="night_changes.jpg" alt="cover" class="queue-img q3img">
+                    </div>
+                    <div class="col m-0 q3text text">Night changes</div>
+                </div>
+                <div class="row p-0" style="margin-bottom: 3vh;">
+                    <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
+                        <img src="soul_king.png" alt="cover" class="queue-img q4img">
+                    </div>
+                    <div class="col m-0 q4text text">Bink Sake</div>
+                </div>
+            </div>
+            <div class="top-pick p-0">
+                <div class="top-pick-cover">
+                    <img src="soul_king.png" alt="cover" class="top-pick-image">
+                </div>
+                <div class="top-pick-details">
+                    <p class="top-pick-heading">Today's Top Pick</p>
+                    <p class="top-pick-text">Soul King</p>
+                    <button class="btn btn-success binksake">Play now</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="message">
+                    <p class="greeting">Good morning,</p>
+                </div>
+                <div class="cards row">
+                    <div class="m-4 song-card card1 col-lg-3 col-md-4 col-6">
+                        <img src="Withthebeatlescover.jpg" class="card-image-top">
+                        <div class="card-body">
+                            <p>Beatles</p>
+                            <button class="btn btn-outline-success card-btn baby_ur"><i class="fa-solid fa-play fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="m-4 song-card card2 col-lg-3 col-md-4 col-6">
+                        <img src="night_changes.jpg" class="card-image-top">
+                        <div class="card-body">
+                            <p>One direction</p>
+                            <button class="btn btn-outline-success card-btn night_changes"><i class="fa-solid fa-play fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="m-4 song-card card2 col-lg-3 col-md-4 col-6">
+                        <img src="Moneky_d_luffy.png" class="card-image-top">
+                        <div class="card-body">
+                            <p>Luffy</p>
+                            <button class="btn btn-outline-success card-btn luffy"><i
+                                    class="fa-solid fa-play fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="message" style="margin-top: 8vh;">
+                    <p>Tracks For You</p>
+                </div>
+                <div class="cards row">
+                    <div class="m-4 song-card card1 col-lg-3 col-md-4 col-6">
+                        <img src="Withthebeatlescover.jpg" class="card-image-top">
+                        <div class="card-body">
+                            <p>Beatles</p>
+                            <button class="btn btn-outline-success card-btn baby_ur"><i class="fa-solid fa-play fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="m-4 song-card card2 col-lg-3 col-md-4 col-6">
+                        <img src="night_changes.jpg" class="card-image-top">
+                        <div class="card-body">
+                            <p>One direction</p>
+                            <button class="btn btn-outline-success card-btn night_changes"><i class="fa-solid fa-play fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="m-4 song-card card2 col-lg-3 col-md-4 col-6">
+                        <img src="Moneky_d_luffy.png" class="card-image-top">
+                        <div class="card-body">
+                            <p>Luffy</p>
+                            <button class="btn btn-outline-success card-btn luffy"><i
+                                    class="fa-solid fa-play fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- wanna add a recently played section too with dynamic js -->
+            </div>
+        </div>
+            <!-- Music controls -->
+            <footer class="p-0">
+                <div class="Player p-0">
+                    <div class="row">
+                        <!-- album -->
+                        <div class="col-lg-1 col-md-1 col-2  album">
+                            <div>
+                                <img src="Darasal.jpg" alt="album" class="album-img">
+                            </div>
+                        </div>
+                        <!-- song name and artist name -->
+                        <div class="col-lg-2 col-md-2 col-2 song-name">
+                            <p class="song-name-text">Darasal</p>
+                            <p class="song-artist-text">Raabta</p>
+                        </div>
+                        <!-- control features -->
+                        <div class="col-lg-5 col-5">
+                            <div class="row controls">
+                                <div class="row controls-up">
+                                    <div class="col-lg-1 col-md-2 col-3 left-icon">
+                                        <i class="fa-solid fa-circle-chevron-left fa-lg"></i>
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-2 play-icon p-0">
+                                        <i class="fa-solid fa-play fa-lg"></i>
+                                    </div>
+                                    <div class="col-lg-1 col-md-2 col-3 play-next">
+                                        <i class="fa-solid fa-circle-chevron-right fa-lg"></i>
+                                    </div>
+                                </div>
+                                <!-- slider -->
+                                <div class="timeline-slider">
+                                    <div class="time-slider">
+                                        <div class="row ">
+                                            <div class="col-lg-1 col-2">
+                                                <small class="song-current-time"></small>
+                                            </div>
+                                            <div class="col">
+                                                <input type="range" min="0" max="100" value="0" class="slider"
+                                                    style="width:100%">
+                                            </div>
+                                            <div class="col-lg-1 col-1 ms-2">
+                                                <small class="song-duration-time"></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Queue and volume controls -->
+                        <div class="col player-functions">
+                            <div class="row">
+                                <!-- Queue icon -->
+                                <div class="col-lg-1 col-1 queue-icon">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                </div>
+                                <!-- volume icon -->
+                                <div class="col-lg-1 col-1">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </div>
+                                <!-- volume slider -->
+                                <div class="col-lg-6 col-6 volume-status">
+                                    <div class="slider" style="margin-top:0.5vh;">
+                                        <input type="range" min="0" max="100" value="100" class="vol-slider"
+                                            style="width:100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="script.js"></script>
+</body>
+
+</html>
