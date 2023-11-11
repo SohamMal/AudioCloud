@@ -49,9 +49,11 @@ var now_playing_text=document.querySelector(".Now-playing-text");
 var q1img=document.querySelector(".q1img");
 var q3img=document.querySelector(".q3img");
 var q2img=document.querySelector(".q2img");
+var q4img=document.querySelector(".q4img");
 var q1text=document.querySelector(".q1text");
 var q2text=document.querySelector(".q2text");
 var q3text=document.querySelector(".q3text");
+var q4text=document.querySelector(".q4text");
 now_playing_img.src=images[i];
 now_playing_text.innerText=songs[i];
 
@@ -74,6 +76,9 @@ function change_queue(){
     condition_for_loop();
     q3img.src=images[k];
     q3text.innerText=songs[k];
+    condition_for_loop();
+    q4img.src=images[k];
+    q4text.innerText=songs[k];
 }
 
 //play button
