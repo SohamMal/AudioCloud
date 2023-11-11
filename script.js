@@ -170,7 +170,7 @@ var played;
 var song_crnt_time=document.querySelector(".song-current-time");
 setInterval(function(){
     played=(100 * audio[i].currentTime / audio[i].duration);
-    slider.addEventListener("click", function(){
+    slider.addEventListener("input", function(){
         //change current time too
         audio[i].currentTime=(slider.value/100)*audio[i].duration;
         played=slider.value;
@@ -275,7 +275,6 @@ luffy_song.addEventListener("click", function(){
 var greeting=document.querySelector(".greeting");
 var today=new Date();
 var hours=today.getHours();
-console.log(hours);
 if(hours<12){
     greeting.innerText="Good Morning,";
 }
