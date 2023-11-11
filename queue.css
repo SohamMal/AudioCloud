@@ -1,12 +1,12 @@
 .Queue{
-    display: none; 
-    box-shadow:0 0 20px skyblue;
+    display: none;
+    /* box-shadow:0 0 20px skyblue; */
     z-index: 2;
     position: fixed;
     background-color: #73BBC9;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 25%;
-    margin-top: 34vh;
+    margin-top: 35vh;
     left: 73%;
     height: 52vh;
     overflow-y: scroll;
