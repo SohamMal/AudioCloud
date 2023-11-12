@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    /* box-shadow: inset 0 100px 100px -50px rgb(0, 78, 102); */
+}
+.container-fluid{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Sign-in-block{
+    background-color: black;
+    /* box-shadow: rebeccapurple -20px 16px; */
+    /* box-shadow: 0 0px 100px rgb(0, 78, 102); */
+    /* box-shadow: 2px 2px 100px 0px rgb(0, 78, 102); */
+    /* box-shadow: 2px 2px 100px 0px red; */
+    /* box-shadow: inset 5em 1em gold; */
+    border: 2px inset white;
+    /* border-radius: 10px; */
+}
+.Signin-Header{
+    text-align: center;
+    color: white;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Bebas Neue', sans-serif; */
+    text-shadow: 0px 1px 5px blue;
+    font-size: 1.5em;
+}
+.Email{
+    /* width: 10%; */
+    margin: 6vh 7vw 0vh 6.5vw;
+}
+.Email input[type="email"]{
+    font-size: 1em;
+    color: gray;
+}
+.Email input[type="email"]:focus {
+    outline: none;
+}
+::placeholder{
+    font-family: 'Recursive', sans-serif;
+    color: silver;
+}  
+.Email-input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid silver;
+    height: 4vh;
+}
+.isemail-text{
+    visibility: hidden;
+    font-family: 'Recursive', sans-serif;
+    font-size: 0.9em;
+    color: tomato;
+    margin-left: 24%;
+    margin-top: 0.6vh;
+}
+.isPassword-text{
+    visibility: hidden;
+    font-family: 'Recursive', sans-serif;
+    font-size: 0.9em;
+    color: tomato;
+    margin-left: 24%;
+    margin-top: 0.6vh;
+}
+.Password-input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid silver;
+    height: 4vh;
+}
+.Password input[type="password"]{
+    font-size: 1em;
+    color: gray;
+}
+.Password input[type="password"]:focus {
+    outline: none;
+  }
+.Password{
+    margin: 1vh 7vw 0vh 6.5vw;
+}
+.next-btn{
+    margin: 6vh 7vw 5vh 6.5vw;
+}
+.btn{
+    color: white;
+    background-color: darkturquoise;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 700;
+    border-radius: 10px;
+    height: 5vh;
+    width: 100%;
+}
+.forgot-pass{
+    margin-left: 35%;
+    margin-bottom: 2vh;
+}
+.forgot-pass .text{
+    text-decoration: none;
+    color: gray;
+}
+.hr1{
+    display: inline-block;
+    margin-left: 22%;
+    width: 20%;
+}
+.hr2{
+    display: inline-block;
+    width: 20%;
+}
+.or{
+    color: gray;
+    margin: 1rem;
+    font-weight: 300;
+    display: inline-block;
+}
+.google-btn{
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    font-weight: 600;
+    color: white;
+    width: 10%;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-left: 35%;
+    margin-bottom: 5vh;
+}
+.facebook-btn{
+    border: none;
+    border-radius: 10px;
+    background-color: navy;
+    font-weight: 600;
+    color: white;
+    width: 10%;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-left: 8%;
+    margin-bottom: 5vh;
+}
+.emoji-div{
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-bottom: 3vh;
+    color: skyblue;
+}
+.info-reveal{
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    position: absolute;
+    display: none;
+    left: 40%;
+    top: 20%;
+    color:silver;
+}
+.info-reveal .close{
+    color: red;
+    border: 1px solid red; 
+    width:fit-content;
+    padding:2%;
+    float:right;
+    cursor: pointer;
+}
+.info-reveal .close:hover{
+    color: white;
+    background-color: red;
+}
