@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AudioWave</title>
+    <link rel="shortcut icon" type="image/jpg" href="soundcloud-logo.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="queue.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,13 +22,41 @@
 <body>
     <!-- navbar -->
     <div class="navbar">
-        <div class="logo ms-3">
+        <div class="togglebtn ms-4">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="logo">
             <i class="fa-brands fa-soundcloud fa-2xl"></i>
             <span class="title ms-1">AuidoWave</span>
         </div>
-        <div class="togglebtn me-4">
-            <i class="fa-solid fa-bars fa-xl"></i>
-        </div>
+    </div>
+    <div class="dropdown">
+        <ul class="dropdown-list">
+            <li class="dropdown-list-item">
+                <a class="dropdown-links" href="#">
+                    <span><i class="fa-solid fa-house fa-lg"></i></span>
+                    <span class="ms-2">Home</span>
+                </a>
+            </li>
+            <li class="dropdown-list-item">
+                <a class="dropdown-links" href="#">
+                    <span><i class="fa-solid fa-compass fa-lg"></i></span>
+                    <span class="ms-2">Explore</span>
+                </a>
+            </li>
+            <li class="dropdown-list-item">
+                <a class="dropdown-links" href="#">
+                    <span><i class="fa-solid fa-music fa-lg"></i></span>
+                    <span class="ms-2">Moodes</span>
+                </a>
+            </li>
+            <li class="dropdown-list-item">
+                <a class="dropdown-links" href="#">
+                    <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                    <span class="ms-2">Search</span>
+                </a>
+            </li>
+        </ul>
     </div>
     <!-- sidebar -->
     <div class="row">
@@ -75,44 +104,44 @@
                 <p class="queue-header">Now Playing</p>
                 <div class="row p-0">
                     <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
-                        <img src="soul_king.png" alt="soaul_king" class="queue-img Now-playing-img">
+                        <img src="Pehli Dafa.jpg" alt="Pehli Dafa" class="queue-img Now-playing-img">
                     </div>
-                    <div class="col m-0 Now-playing-text text">Bink's Sake</div>
+                    <div class="col m-0 Now-playing-text text">Pehli Dafa</div>
                 </div>
                 <p class="queue-header">Next in queue</p>
                 <div class="row p-0" style="margin-bottom: 3vh;">
                     <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
-                        <img src="Withthebeatlescover.jpg" alt="cover" class="queue-img q1img">
+                        <img src="kishore kumar.jpg" alt="cover" class="queue-img q1img">
                     </div>
-                    <div class="col m-0 q1text text">Baby you're a rich man</div>
+                    <div class="col m-0 q1text text">Pal Pal Dil Ke Paas</div>
                 </div>
                 <div class="row p-0" style="margin-bottom: 3vh;">
                     <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
-                        <img src="Moneky_d_luffy.png" alt="cover" class="queue-img q2img">
+                        <img src="lego house.jpg" alt="cover" class="queue-img q2img">
                     </div>
-                    <div class="col m-0 q2text text">Monkey the luffy</div>
+                    <div class="col m-0 q2text text">Lego House</div>
                 </div>
                 <div class="row p-0" style="margin-bottom: 3vh;">
                     <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
                         <img src="night_changes.jpg" alt="cover" class="queue-img q3img">
                     </div>
-                    <div class="col m-0 q3text text">Night changes</div>
+                    <div class="col m-0 q3text text">Night Changes</div>
                 </div>
                 <div class="row p-0" style="margin-bottom: 3vh;">
                     <div class="col-lg-3 col-3 p-0 text-center" style="margin-left: 10%;">
-                        <img src="soul_king.png" alt="cover" class="queue-img q4img">
+                        <img src="Darasal.jpg" alt="cover" class="queue-img q4img">
                     </div>
-                    <div class="col m-0 q4text text">Bink Sake</div>
+                    <div class="col m-0 q4text text">Darasal</div>
                 </div>
             </div>
             <div class="top-pick p-0">
                 <div class="top-pick-cover">
-                    <img src="soul_king.png" alt="cover" class="top-pick-image">
+                    <img src="Pehli Dafa.jpg" alt="cover" class="top-pick-image">
                 </div>
                 <div class="top-pick-details">
                     <p class="top-pick-heading">Today's Top Pick</p>
-                    <p class="top-pick-text">Soul King</p>
-                    <button class="btn btn-success binksake">Play now</button>
+                    <p class="top-pick-text">Pehli Dafa</p>
+                    <button class="btn btn-success pehli-dafa">Play now</button>
                 </div>
             </div>
             <div class="content">
@@ -121,24 +150,24 @@
                 </div>
                 <div class="cards row">
                     <div class="m-4 song-card card1 col-lg-3 col-md-3 col-sm-4 col-6">
-                        <img src="Withthebeatlescover.jpg" class="card-image-top">
+                        <img src="help.jpg" class="card-image-top">
                         <div class="card-body">
-                            <p>Beatles</p>
-                            <button class="btn btn-outline-success card-btn baby_ur"><i class="fa-solid fa-play fa-lg"></i></button>
+                            <p>Help</p>
+                            <button class="btn btn-outline-success card-btn help"><i class="fa-solid fa-play fa-lg"></i></button>
                         </div>
                     </div>
                     <div class="m-4 song-card card2 col-lg-3 col-md-3 col-sm-4 col-6">
                         <img src="night_changes.jpg" class="card-image-top">
                         <div class="card-body">
-                            <p>One direction</p>
+                            <p>Night Changes</p>
                             <button class="btn btn-outline-success card-btn night_changes"><i class="fa-solid fa-play fa-lg"></i></button>
                         </div>
                     </div>
                     <div class="m-4 song-card card3 col-lg-3 col-md-3 col-sm-4 col-6">
-                        <img src="Moneky_d_luffy.png" class="card-image-top">
+                        <img src="Darasal.jpg" class="card-image-top">
                         <div class="card-body">
-                            <p>Luffy</p>
-                            <button class="btn btn-outline-success card-btn luffy"><i
+                            <p>Darasal</p>
+                            <button class="btn btn-outline-success card-btn darasal"><i
                                     class="fa-solid fa-play fa-lg"></i></button>
                         </div>
                     </div>
@@ -146,26 +175,26 @@
                 <div class="message" style="margin-top: 8vh;">
                     <p>Tracks For You</p>
                 </div>
-                <div class="cards row">
+                <div class="cards tracks row">
                     <div class="m-4 song-card card1 col-lg-3 col-md-3 col-sm-4 col-6">
-                        <img src="Withthebeatlescover.jpg" class="card-image-top">
+                        <img src="kishore kumar.jpg" class="card-image-top">
                         <div class="card-body">
-                            <p>Beatles</p>
-                            <button class="btn btn-outline-success card-btn baby_ur"><i class="fa-solid fa-play fa-lg"></i></button>
+                            <p>Pal Pal Dil Ke Paas</p>
+                            <button class="btn btn-outline-success card-btn pal_pal"><i class="fa-solid fa-play fa-lg"></i></button>
                         </div>
                     </div>
                     <div class="m-4 song-card card2 col-lg-3 col-md-3 col-sm-4 col-6">
-                        <img src="night_changes.jpg" class="card-image-top">
+                        <img src="lego house.jpg" class="card-image-top">
                         <div class="card-body">
-                            <p>One direction</p>
-                            <button class="btn btn-outline-success card-btn night_changes"><i class="fa-solid fa-play fa-lg"></i></button>
+                            <p>Lego House</p>
+                            <button class="btn btn-outline-success card-btn lego"><i class="fa-solid fa-play fa-lg"></i></button>
                         </div>
                     </div>
                     <div class="m-4 song-card card3 col-lg-3 col-md-3 col-sm-4 col-6">
-                        <img src="Moneky_d_luffy.png" class="card-image-top">
+                        <img src="Pehli Dafa.jpg" class="card-image-top">
                         <div class="card-body">
-                            <p>Luffy</p>
-                            <button class="btn btn-outline-success card-btn luffy"><i
+                            <p>Pehli Dafa</p>
+                            <button class="btn btn-outline-success card-btn pehli-dafa"><i
                                     class="fa-solid fa-play fa-lg"></i></button>
                         </div>
                     </div>
@@ -180,13 +209,13 @@
                         <!-- album -->
                         <div class="col-lg-1 col-md-1 col-sm-2 col-3  album">
                             <div>
-                                <img src="Darasal.jpg" alt="album" class="album-img">
+                                <img src="Pehli Dafa.jpg" alt="album" class="album-img">
                             </div>
                         </div>
                         <!-- song name and artist name -->
                         <div class="col-lg-2 col-md-2 col-2 song-name">
-                            <p class="song-name-text">Darasal</p>
-                            <p class="song-artist-text">Raabta</p>
+                            <p class="song-name-text">Pehli Dafa</p>
+                            <p class="song-artist-text">Atif Aslam</p>
                         </div>
                         <!-- control features -->
                         <div class="col-lg-5 col-md-5 col-sm-5 col-7">
