@@ -1,33 +1,37 @@
 //audio array
 var audio=[];
-audio[4]=new Audio('brook_tone.mp3');
-audio[1]=new Audio('Baby, You\'re A Rich Man.mp3');
-audio[2]=new Audio('monkey_d_luffy.mp3');
+audio[0]=new Audio('Pehli Dafa.mp3');
+audio[1]=new Audio('Pal Pal Dil Ke Paas.mp3');
+audio[2]=new Audio('Lego House.mp3');
 audio[3]=new Audio('Night Changes.mp3');
-audio[0]=new Audio('darsal.mp3');
+audio[4]=new Audio('darsal.mp3');
+audio[5]=new Audio('Help.mp3');
 
 //image array
 var images=[];
-images[4]='soul_king.png';
-images[1]='Withthebeatlescover.jpg';
-images[2]='Moneky_d_luffy.png';
+images[0]='Pehli Dafa.jpg';
+images[1]='kishore kumar.jpg';
+images[2]='lego house.jpg';
 images[3]='night_changes.jpg';
-images[0]='Darasal.jpg';
+images[4]='Darasal.jpg';
+images[5]='help.jpg';
 
 //names array
 var artists=[];
-artists[4]="One-piece";
-artists[1]="Beatles";
-artists[2]="Luffy";
+artists[0]="Atif Aslam";
+artists[1]="Kishore Kumar";
+artists[2]="Ed Sheeran";
 artists[3]="One-direction";
-artists[0]="Raabta"
+artists[4]="Raabta"
+artists[5]="Beatles";
 
 var songs=[];
-songs[4]="Binks sake";
-songs[1]="Baby you\'re rich man";
-songs[2]="Monkey_d_luffy";
-songs[3]="Night_changes";
-songs[0]="Darsal";
+songs[0]="Pehli Dafa";
+songs[1]="Pal Pal Dil Ke Paas";
+songs[2]="Lego House";
+songs[3]="Night Changes";
+songs[4]="Darsal";
+songs[5]="Help";
 
 var i=0;
 //queue
@@ -220,61 +224,73 @@ signinbtn.addEventListener("click", function(){
 })
 
 //play buttons in main display
-var binksake=document.querySelector(".binksake");
-var urrichman=document.querySelector(".baby_ur");
-var nightchng=document.querySelector(".night_changes");
-var luffy_song=document.querySelector(".luffy");
-binksake.addEventListener("click", function(){
+function playonly(){
+    if(!isplay){
+        play_btn.classList.remove('fa-play');
+        play_btn.classList.add('fa-pause');
+        audio[i].play();
+        isplay=true;
+    }
+    else if(isplay){
+        audio[i].play();
+        isplay=false;
+    }
+}
+var pehlidafa=document.querySelectorAll(".pehli-dafa");
+var pal_pal=document.querySelector(".pal_pal");
+var night_changes=document.querySelector(".night_changes");
+var darsal=document.querySelector(".darasal");
+var help=document.querySelector(".help");
+var lego=document.querySelector(".lego");
+darsal.addEventListener("click", function(){
     audio[i].pause();
     i=4;
     change_album();
     change_queue();
     audio[i].currentTime=0;
-    if(isplay){
-        audio[i].play();
-    }
-    else{
-        audio[i].pause();
-    }
+    playonly();
 });
-urrichman.addEventListener("click", function(){
+pehlidafa.forEach(element => {
+    element.addEventListener('click', function() {
+        audio[i].pause();
+        i=0;
+        change_album();
+        change_queue();
+        audio[i].currentTime=0;
+        playonly();
+    });
+});
+pal_pal.addEventListener("click", function(){
     audio[i].pause();
     i=1;
     change_album();
     change_queue();
     audio[i].currentTime=0;
-    if(isplay){
-        audio[i].play();
-    }
-    else{
-        audio[i].pause();
-    }
+    playonly();
 });
-nightchng.addEventListener("click", function(){
+night_changes.addEventListener("click", function(){
     audio[i].pause();
     i=3;
     change_album();
     change_queue();
     audio[i].currentTime=0;
-    if(isplay){
-        audio[i].play();
-    }
-    else{
-        audio[i].pause();
-    }
+    playonly();
 });
-luffy_song.addEventListener("click", function(){
+lego.addEventListener("click", function(){
     audio[i].pause();
     i=2;
     change_album();
     change_queue();
     audio[i].currentTime=0;
-    if(isplay){
-        audio[i].play();
-    }
-    else{
-        audio[i].pause();
-    }
+    playonly();
+});
+help.addEventListener("click", function(){
+    audio[i].pause();
+    i=5;
+    change_album();
+    change_queue();
+    audio[i].currentTime=0;
+    playonly();
 });
 // message greeting
 var greeting=document.querySelector(".greeting");
@@ -289,3 +305,13 @@ else if(hours>=12 && hours<18){
 else if(hours>=18){
     greeting.innerText="Good Evening,";
 }
+
+var togglebtn = document.querySelector(".togglebtn");
+var dropdown = document.querySelector(".dropdown");
+togglebtn.addEventListener("click", function(){
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+});
