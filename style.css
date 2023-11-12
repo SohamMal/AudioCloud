@@ -2,6 +2,10 @@
     margin:0;
     padding: 0;
 }
+
+body{
+    height:90vh
+}
 /* navbar */
 .navbar{
     display: none !important;
@@ -44,6 +48,7 @@
     font-size: 1.2em;
     color: skyblue;
     font-family: 'Lobster', sans-serif;
+    margin-top: 2vh !important;
 }
 .sidebar-list{
     background-color: black;
@@ -104,9 +109,9 @@
     box-shadow: 0px 0px 30px skyblue;
     display: flex;
     position: absolute;
-    width: 40%;
+    width: 45%;
     top: 1.5%;
-    left: 30%;
+    left: 25%;
     height: 15%;
 }
 @media screen and (max-width: 1192px) {
@@ -327,4 +332,22 @@ footer{
     .player-functions{
         display: none;
     }
+}
+.dropdown{
+    display: none;
+    background-color: black;
+}
+.dropdown-list{
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    margin: 0;
+    background-color: black;
+    line-height: 350%;
+    list-style: none;
+}
+.dropdown-list-item a{
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
 }
