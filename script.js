@@ -104,6 +104,14 @@ var play_btn=document.querySelector(".play-icon i");
 var isplay=false;
 play_btn.addEventListener("click", play)
 
+//play and pause on space
+document.addEventListener("keyup", function(event){
+    if(event.code==='Space'){
+        // event.preventDefault();
+        play();
+    }
+})
+
 //change album and names
 var song_name_text=document.querySelector('.song-name-text');
 var song_artist_text=document.querySelector('.song-artist-text');
@@ -315,3 +323,24 @@ togglebtn.addEventListener("click", function(){
         dropdown.style.display = "block";
     }
 });
+
+var dropdown_top_pick=document.querySelector(".top-pick-dropodown");
+var top_pick=document.querySelector(".top-pick");
+var cross=document.querySelector(".cross-mark");
+var content=document.querySelector(".content");
+dropdown_top_pick.addEventListener("click", function(){
+    if(top_pick.style.display==="flex"){
+        top_pick.style.display="none";
+        content.style.display="block";
+    }
+    else{
+        top_pick.style.display="flex";
+        content.style.display="none";
+    }
+})
+
+cross.addEventListener("click", function(){
+    top_pick.style.display="none";
+    content.style.display="block";
+    content.style.top="1%";
+})
