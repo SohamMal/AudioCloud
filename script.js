@@ -332,10 +332,12 @@ dropdown_top_pick.addEventListener("click", function(){
     if(top_pick.style.display==="flex"){
         top_pick.style.display="none";
         content.style.display="block";
+        content.style.top="1%";
     }
     else{
         top_pick.style.display="flex";
         content.style.display="none";
+        content.style.top="1%";
     }
 })
 
