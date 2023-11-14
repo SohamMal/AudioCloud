@@ -175,29 +175,12 @@ body{
         height: 30vh;
     }
 }
-.cross-mark{
-    margin-top: 1vh;
-    margin-left: 90%;
-}
-/* @media screen and (max-width: 1024px) {
-    .cross-mark{
-        display: flex;
-    }
-} */
 @media screen and (max-width: 425px){
-    .cross-mark{
-        margin-left: 85%;
-    }
     .top-pick-heading{
         font-size: 1.5em;
     }
     .top-pick-text{
         font-size: 1.5em;
-    }
-}
-@media screen and (max-width: 320px) {
-    .cross-mark{
-        margin-left: 80%;
     }
 }
 /* main display .content */
