@@ -1,2 +1,2 @@
-# AudioWave
-Audiowave: A music player
+# AudioCloud
+AudioCloud: A music player
