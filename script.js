@@ -230,6 +230,10 @@ var signinbtn=document.querySelector(".sign-in-btn");
 signinbtn.addEventListener("click", function(){
     window.open("Signin.html", "_self");
 })
+var navbar_sign_in=document.querySelector(".navbar-sign-in-btn");
+navbar_sign_in.addEventListener("click", function(){
+    window.open("Signin.html", "_self");
+})
 
 //play buttons in main display
 function playonly(){
