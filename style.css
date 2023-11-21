@@ -246,7 +246,7 @@ body{
 footer{
     position: fixed;
     left: 0;
-    top: 86vh;
+    top: 86dvh;
     z-index: 4;
 }
 .Player{
